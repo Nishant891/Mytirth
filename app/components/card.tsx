@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 type CardProps = {
   id: number;
@@ -6,7 +7,7 @@ type CardProps = {
   price: string;
   url: string;
 };
-const Card = ({ id, name, discount, price, url }: CardProps) => {
+const Card = ({name, discount, price, url }: CardProps) => {
   return (
     <div>
       <a
@@ -17,7 +18,7 @@ const Card = ({ id, name, discount, price, url }: CardProps) => {
           Save {discount}
         </span>
 
-        <img
+        <Image
           src={url}
           alt="A pilgrim"
           className="h-80 w-full rounded-tr-3xl object-cover"
