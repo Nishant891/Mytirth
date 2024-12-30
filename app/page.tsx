@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <div className="relative main">
-        <video className="object-cover" autoPlay loop muted playsInline className="bg__video">
+        <video autoPlay loop muted playsInline className="bg__video">
           <source src="/bg-video.mp4" type="video/mp4" />
         </video>
         <Navbar />
