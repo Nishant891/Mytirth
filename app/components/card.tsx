@@ -18,7 +18,7 @@ const Card = ({name, discount, price, url }: CardProps) => {
           Save {discount}
         </span>
 
-        <Image
+        <img
           src={url}
           alt="A pilgrim"
           className="h-80 w-full rounded-tr-3xl object-cover"

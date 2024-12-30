@@ -4,11 +4,16 @@ import Gallery from "./components/gallery";
 import Footer from "./components/footer";
 export default function Home() {
   return (
-    <main>
-      <Navbar/>
-      <Landing/>
-      <Gallery/>
-      <Footer/>
-    </main>
+    <>
+      <div className="relative main">
+        <video className="object-cover" autoPlay loop muted playsInline className="bg__video">
+          <source src="/bg-video.mp4" type="video/mp4" />
+        </video>
+        <Navbar />
+        <Landing />
+      </div>
+      <Gallery />
+      <Footer />
+    </>
   );
 }
